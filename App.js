@@ -33,7 +33,18 @@ const MyStack = () => {
         }}
         component={SignUpScreen}
       />
-      <Stack.Screen name="SignInpage" component={SignInScreen} />
+      <Stack.Screen
+        name="SignUppage"
+        options={{
+          title: "Sign Up page",
+          headerStyle: {
+            backgroundColor: "#111317",
+          },
+          headerTintColor: "#fff",
+        }}
+        name="SignInpage"
+        component={SignInScreen}
+      />
     </Stack.Navigator>
   );
 };
