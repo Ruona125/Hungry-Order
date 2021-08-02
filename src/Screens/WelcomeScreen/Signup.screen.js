@@ -31,7 +31,7 @@ export const SignUpScreen = () => {
         <EmailAndPassword />
       </View>
 
-      <View>
+      <View style={{ alignItems: "center" }}>
         <TouchableOpacity
           // onPress={() => navigation.navigate("SignUppage")}
           style={{
@@ -52,9 +52,11 @@ export const SignUpScreen = () => {
             Sign Up
           </Text>
         </TouchableOpacity>
-        <Text style={{ color: "#686868" }}>
-          Already a Member? <Text>Sign In</Text>
-        </Text>
+        <TouchableOpacity>
+          <Text style={{ color: "#686868", top: 140 }}>
+            Already a Member? <Text style={{ color: "#fd9c1b" }}>Sign In</Text>
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
