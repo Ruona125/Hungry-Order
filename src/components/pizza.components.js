@@ -1,12 +1,12 @@
 import React from "react";
 import { Image, View, StyleSheet } from "react-native";
 
-import Logo from "../../images/01-bg.jpg";
+import PizzaLogo from "../../images/preview.jpg";
 
 export const Pizza = () => {
   return (
     <View style={styles.pic}>
-      <Image source={Logo} />
+      <Image style={{ width: 370 }} source={PizzaLogo} />
     </View>
   );
 };

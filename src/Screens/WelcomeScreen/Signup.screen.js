@@ -1,13 +1,61 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 
 import { Pizza } from "../../components/pizza.components";
+import { EmailAndPassword } from "../../components/FormComponent/emailAndPasswordForm";
 
 export const SignUpScreen = () => {
   return (
     <View style={styles.container}>
       <Pizza />
+
       <Text style={styles.textStyle}>Sign Up</Text>
+      <View style={styles.formStyle}>
+        <TextInput
+          placeholderTextColor="#686868"
+          style={{
+            borderColor: "#686868",
+            height: 40,
+            margin: 12,
+            borderBottomWidth: 1,
+            width: 300,
+          }}
+          placeholder="Username"
+        />
+        <EmailAndPassword />
+      </View>
+
+      <View>
+        <TouchableOpacity
+          // onPress={() => navigation.navigate("SignUppage")}
+          style={{
+            borderWidth: 3,
+
+            backgroundColor: "#fd9c1b",
+            width: 350,
+            borderRadius: 40,
+            top: 120,
+          }}>
+          <Text
+            style={{
+              fontSize: 20,
+              color: "#fff",
+              textAlign: "center",
+              padding: 20,
+            }}>
+            Sign Up
+          </Text>
+        </TouchableOpacity>
+        <Text style={{ color: "#686868" }}>
+          Already a Member? <Text>Sign In</Text>
+        </Text>
+      </View>
     </View>
   );
 };
@@ -22,7 +70,11 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     fontSize: 20,
     position: "relative",
-    top: 100,
+    top: 60,
     paddingLeft: 19,
+  },
+  formStyle: {
+    alignItems: "center",
+    top: 80,
   },
 });
