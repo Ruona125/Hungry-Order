@@ -1,10 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { SignUpScreen } from "./src/Screens/WelcomeScreen/Signup.screen";
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { WelcomePage } from "./src/Screens/WelcomeScreen/welcomePage";
-import { SignInScreen } from "./src/Screens/WelcomeScreen/Signin.screen";
+
+import { WelcomePage } from "./src/Screens/welcomePage";
+import { SignInScreen } from "./src/Screens/Signin.screen";
+import { SignUpScreen } from "./src/Screens/Signup.screen";
+import { Explore } from "./src/Screens/Explore.screen";
 
 const Stack = createStackNavigator();
 
@@ -12,7 +15,7 @@ const MyStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Sign In & Sign Up"
+        name="SignInAndSignUp"
         component={WelcomePage}
         options={{
           title: "Sign In and Sign Up",
@@ -34,9 +37,9 @@ const MyStack = () => {
         component={SignUpScreen}
       />
       <Stack.Screen
-        name="SignUppage"
+        name="SignInpage"
         options={{
-          title: "Sign Up page",
+          title: "Sign In page",
           headerStyle: {
             backgroundColor: "#111317",
           },
@@ -44,6 +47,18 @@ const MyStack = () => {
         }}
         name="SignInpage"
         component={SignInScreen}
+      />
+      <Stack.Screen
+        name="Explore"
+        options={{
+          title: "Explore",
+          headerStyle: {
+            backgroundColor: "#111317",
+          },
+          headerTintColor: "#fff",
+        }}
+        name="Explore"
+        component={Explore}
       />
     </Stack.Navigator>
   );

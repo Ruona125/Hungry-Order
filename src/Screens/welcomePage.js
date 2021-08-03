@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, View, StyleSheet, TouchableOpacity, Text } from "react-native";
 
-import { HomeLogo } from "../../components/logo.components";
+import { HomeLogo } from "../components/logo.components";
 
 export const WelcomePage = ({ navigation }) => {
   return (

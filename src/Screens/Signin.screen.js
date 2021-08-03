@@ -1,42 +1,24 @@
 import React from "react";
-import {
-  Text,
-  View,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
-import { Pizza } from "../../components/pizza.components";
-import { EmailAndPassword } from "../../components/FormComponent/emailAndPasswordForm";
+import { Pizza } from "../components/pizza.components";
+import { EmailAndPassword } from "../components/FormComponent/emailAndPasswordForm";
 
-export const SignUpScreen = () => {
+export const SignInScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Pizza />
 
-      <Text style={styles.textStyle}>Sign Up</Text>
+      <Text style={styles.textStyle}>Sign In</Text>
       <View style={styles.formStyle}>
-        <TextInput
-          placeholderTextColor="#686868"
-          style={{
-            borderColor: "#686868",
-            height: 40,
-            margin: 12,
-            borderBottomWidth: 1,
-            width: 300,
-          }}
-          placeholder="Username"
-        />
         <EmailAndPassword />
       </View>
 
       <View style={{ alignItems: "center" }}>
         <TouchableOpacity
-          // onPress={() => navigation.navigate("SignUppage")}
+          onPress={() => navigation.navigate("Explore")}
           style={{
             borderWidth: 3,
-
             backgroundColor: "#fd9c1b",
             width: 350,
             borderRadius: 40,
@@ -49,14 +31,19 @@ export const SignUpScreen = () => {
               textAlign: "center",
               padding: 20,
             }}>
-            Sign Up
+            Sign In
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={{ color: "#686868", top: 140 }}>
-            Already a Member? <Text style={{ color: "#fd9c1b" }}>Sign In</Text>
-          </Text>
-        </TouchableOpacity>
+        <View>
+          <TouchableOpacity>
+            <Text
+              style={{ color: "#686868", top: 140 }}
+              onPress={() => navigation.navigate("SignUppage")}>
+              New to Fine Food?
+              <Text style={{ color: "#fd9c1b" }}>Sign Up</Text>
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
