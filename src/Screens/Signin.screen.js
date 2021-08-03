@@ -14,7 +14,7 @@ export const SignInScreen = ({ navigation }) => {
         <EmailAndPassword />
       </View>
 
-      <View style={{ alignItems: "center" }}>
+      <View style={{ alignItems: "center", top: 125 }}>
         <TouchableOpacity
           onPress={() => navigation.navigate("Explore")}
           style={{

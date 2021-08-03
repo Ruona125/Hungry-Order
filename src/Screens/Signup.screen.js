@@ -27,6 +27,7 @@ export const SignUpScreen = ({ navigation }) => {
             width: 300,
           }}
           placeholder="Username"
+          color="white"
         />
         <EmailAndPassword />
       </View>
@@ -39,7 +40,7 @@ export const SignUpScreen = ({ navigation }) => {
             backgroundColor: "#fd9c1b",
             width: 350,
             borderRadius: 40,
-            top: 120,
+            bottom: 120,
           }}>
           <Text
             style={{
@@ -79,5 +80,6 @@ const styles = StyleSheet.create({
   formStyle: {
     alignItems: "center",
     top: 80,
+    flex: 1,
   },
 });
