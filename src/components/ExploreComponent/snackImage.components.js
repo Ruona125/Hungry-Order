@@ -10,11 +10,11 @@ import FifthCat from "../../../images/categories-5.png";
 export const SnackImage = () => {
   return (
     <ScrollView horizontal={true}>
-      <Image style={{ margin: 10 }} source={FirstCat} />
-      <Image style={{ margin: 10 }} source={SecondCat} />
-      <Image style={{ margin: 10 }} source={ThirdCat} />
-      <Image style={{ margin: 10 }} source={FourthCat} />
-      <Image style={{ margin: 10 }} source={FifthCat} />
+      <Image style={{ margin: 11 }} source={FirstCat} />
+      <Image style={{ margin: 11 }} source={SecondCat} />
+      <Image style={{ margin: 11 }} source={ThirdCat} />
+      <Image style={{ margin: 11 }} source={FourthCat} />
+      <Image style={{ margin: 11 }} source={FifthCat} />
     </ScrollView>
   );
 };

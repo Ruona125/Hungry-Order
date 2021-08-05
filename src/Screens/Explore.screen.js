@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
   textAndSearch: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 17,
+    margin: 17,
   },
 });
