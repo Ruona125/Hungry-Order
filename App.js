@@ -28,7 +28,7 @@ const MyStack = () => {
       <Stack.Screen
         name="SignUppage"
         options={{
-          title: "Sign Up page",
+          title: "Sign Up",
           headerStyle: {
             backgroundColor: "#111317",
           },
@@ -39,7 +39,7 @@ const MyStack = () => {
       <Stack.Screen
         name="SignInpage"
         options={{
-          title: "Sign In page",
+          title: "Sign In ",
           headerStyle: {
             backgroundColor: "#111317",
           },

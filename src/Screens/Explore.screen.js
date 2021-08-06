@@ -1,10 +1,14 @@
 import React from "react";
-import { View, Text, StyleSheet, TextInput } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
+
 import { Searchbar } from "react-native-paper";
 import { SnackIcon } from "../components/ExploreComponent/snackIcon";
+import { SnackHeading } from "../components/ExploreComponent/snackHeading";
+import { SnackCard } from "../components/ExploreComponent/snackCard";
+
 export const Explore = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.textAndSearch}>
         <Text style={{ color: "#fff", fontWeight: "900", fontSize: 23 }}>
           Explore
@@ -19,7 +23,31 @@ export const Explore = () => {
       <View>
         <SnackIcon />
       </View>
-    </View>
+
+      <View>
+        <SnackHeading />
+      </View>
+
+      <View>
+        <SnackCard />
+      </View>
+
+      <View>
+        <SnackHeading />
+      </View>
+
+      <View>
+        <SnackCard />
+      </View>
+
+      <View>
+        <SnackHeading></SnackHeading>
+      </View>
+
+      <View>
+        <SnackCard />
+      </View>
+    </ScrollView>
   );
 };
 
