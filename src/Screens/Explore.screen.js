@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
 
+import RightArrow from "../../images/Icons/right-arrow.png";
 import { Searchbar } from "react-native-paper";
 import { SnackIcon } from "../components/ExploreComponent/snackIcon";
-import { SnackHeading } from "../components/ExploreComponent/snackHeading";
 import { SnackCard } from "../components/ExploreComponent/snackCard";
 
 export const Explore = () => {
@@ -24,24 +24,48 @@ export const Explore = () => {
         <SnackIcon />
       </View>
 
-      <View>
-        <SnackHeading />
+      <View
+        style={{
+          margin: 20,
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}>
+        <Text style={{ color: "#fff", fontWeight: "700", fontSize: 20 }}>
+          Popular <Text style={{ color: "#fd9c1b" }}>Foods</Text>
+        </Text>
+        <Image source={RightArrow} />
       </View>
 
       <View>
         <SnackCard />
       </View>
 
-      <View>
-        <SnackHeading />
+      <View
+        style={{
+          margin: 20,
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}>
+        <Text style={{ color: "#fff", fontWeight: "700", fontSize: 20 }}>
+          Special <Text style={{ color: "#fd9c1b" }}>Offers</Text>
+        </Text>
+        <Image source={RightArrow} />
       </View>
 
       <View>
         <SnackCard />
       </View>
 
-      <View>
-        <SnackHeading></SnackHeading>
+      <View
+        style={{
+          margin: 20,
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}>
+        <Text style={{ color: "#fff", fontWeight: "700", fontSize: 20 }}>
+          Midnight <Text style={{ color: "#fd9c1b" }}>Deals</Text>
+        </Text>
+        <Image source={RightArrow} />
       </View>
 
       <View>
