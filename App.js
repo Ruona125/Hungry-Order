@@ -8,6 +8,7 @@ import { WelcomePage } from "./src/Screens/welcomePage";
 import { SignInScreen } from "./src/Screens/Signin.screen";
 import { SignUpScreen } from "./src/Screens/Signup.screen";
 import { Explore } from "./src/Screens/Explore.screen";
+import { Description } from "./src/Screens/description.screen";
 
 const Stack = createStackNavigator();
 
@@ -59,6 +60,18 @@ const MyStack = () => {
         }}
         name="Explore"
         component={Explore}
+      />
+      <Stack.Screen
+        name="Description"
+        options={{
+          title: "Description",
+          headerStyle: {
+            backgroundColor: "#111317",
+          },
+          headerTintColor: "#fff",
+        }}
+        name="Description"
+        component={Description}
       />
     </Stack.Navigator>
   );

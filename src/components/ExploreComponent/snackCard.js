@@ -5,6 +5,7 @@ import {
   ImageBackground,
   StyleSheet,
   View,
+  TouchableOpacity,
 } from "react-native";
 
 import Burger from "../../../images/item-1.png";

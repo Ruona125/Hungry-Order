@@ -1,12 +1,19 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 
 import RightArrow from "../../images/Icons/right-arrow.png";
 import { Searchbar } from "react-native-paper";
 import { SnackIcon } from "../components/ExploreComponent/snackIcon";
 import { SnackCard } from "../components/ExploreComponent/snackCard";
 
-export const Explore = () => {
+export const Explore = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.textAndSearch}>
@@ -33,7 +40,9 @@ export const Explore = () => {
         <Text style={{ color: "#fff", fontWeight: "700", fontSize: 20 }}>
           Popular <Text style={{ color: "#fd9c1b" }}>Foods</Text>
         </Text>
-        <Image source={RightArrow} />
+        <TouchableOpacity onPress={() => navigation.navigate("Description")}>
+          <Image source={RightArrow} />
+        </TouchableOpacity>
       </View>
 
       <View>
@@ -49,7 +58,9 @@ export const Explore = () => {
         <Text style={{ color: "#fff", fontWeight: "700", fontSize: 20 }}>
           Special <Text style={{ color: "#fd9c1b" }}>Offers</Text>
         </Text>
-        <Image source={RightArrow} />
+        <TouchableOpacity onPress={() => navigation.navigate("Description")}>
+          <Image source={RightArrow} />
+        </TouchableOpacity>
       </View>
 
       <View>
@@ -65,7 +76,9 @@ export const Explore = () => {
         <Text style={{ color: "#fff", fontWeight: "700", fontSize: 20 }}>
           Midnight <Text style={{ color: "#fd9c1b" }}>Deals</Text>
         </Text>
-        <Image source={RightArrow} />
+        <TouchableOpacity onPress={() => navigation.navigate("Description")}>
+          <Image source={RightArrow} />
+        </TouchableOpacity>
       </View>
 
       <View>
