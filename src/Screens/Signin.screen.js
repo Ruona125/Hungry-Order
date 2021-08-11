@@ -14,7 +14,7 @@ export const SignInScreen = ({ navigation }) => {
         <EmailAndPassword />
       </View>
 
-      <View style={{ alignItems: "center", top: 125 }}>
+      <View style={{ alignItems: "center", flex: 1 }}>
         <TouchableOpacity
           onPress={() => navigation.navigate("Explore")}
           style={{
@@ -22,7 +22,7 @@ export const SignInScreen = ({ navigation }) => {
             backgroundColor: "#fd9c1b",
             width: 350,
             borderRadius: 40,
-            top: 120,
+            bottom: 10,
           }}>
           <Text
             style={{
@@ -37,10 +37,10 @@ export const SignInScreen = ({ navigation }) => {
         <View>
           <TouchableOpacity>
             <Text
-              style={{ color: "#686868", top: 140 }}
+              style={{ color: "#686868", top: 10 }}
               onPress={() => navigation.navigate("SignUppage")}>
               New to Fine Food?
-              <Text style={{ color: "#fd9c1b" }}>Sign Up</Text>
+              <Text style={{ color: "#fd9c1b" }}> Sign Up</Text>
             </Text>
           </TouchableOpacity>
         </View>
@@ -65,5 +65,6 @@ const styles = StyleSheet.create({
   formStyle: {
     alignItems: "center",
     top: 80,
+    flex: 1,
   },
 });
