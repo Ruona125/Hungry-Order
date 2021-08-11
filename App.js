@@ -9,6 +9,7 @@ import { SignInScreen } from "./src/Screens/Signin.screen";
 import { SignUpScreen } from "./src/Screens/Signup.screen";
 import { Explore } from "./src/Screens/Explore.screen";
 import { Description } from "./src/Screens/description.screen";
+import { CartPage } from "./src/Screens/cart.screen";
 
 const Stack = createStackNavigator();
 
@@ -72,6 +73,18 @@ const MyStack = () => {
         }}
         name="Description"
         component={Description}
+      />
+      <Stack.Screen
+        name="CartPage"
+        options={{
+          title: "CartPage",
+          headerStyle: {
+            backgroundColor: "#111317",
+          },
+          headerTintColor: "#fff",
+        }}
+        name="CartPage"
+        component={CartPage}
       />
     </Stack.Navigator>
   );
