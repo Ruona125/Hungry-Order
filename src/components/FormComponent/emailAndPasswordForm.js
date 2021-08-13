@@ -9,11 +9,15 @@ export const EmailAndPassword = () => {
         style={styles.input}
         placeholder="Email"
         color="white"
+        textContextType="emailAddress"
+        keyboardType="email-address"
       />
       <TextInput
         placeholderTextColor="#686868"
         style={styles.input}
         placeholder="Password"
+        typeContentText="password"
+        secureTextEntry
         color="white"
       />
     </View>
