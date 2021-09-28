@@ -25,6 +25,7 @@ const MyStack = () => {
             backgroundColor: "#111317",
           },
           headerTintColor: "#fff",
+          headerTitleAlign: "center",
         }}
       />
       <Stack.Screen
